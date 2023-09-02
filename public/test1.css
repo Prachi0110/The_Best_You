@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script+Swash+Caps&family=Poppins:ital,wght@0,400;0,600;1,700&family=Satisfy&family=Tiro+Gurmukhi&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(test1.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: 1400px 650px ;
+}
+.Quiz_Name{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50% ,-50%) ;
+    font-size: 2.5rem;
+    font-weight:bolder;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+    
+}
+.Start_Button{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50% ,-50%) ;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#start_button{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(132, 8, 8);
+    padding : 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    cursor:pointer;
+
+}
+#start_button:hover{
+    background-color: rgb(132, 8, 8);
+    color:#fff;
+}

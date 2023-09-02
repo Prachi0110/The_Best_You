@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.mainHeading{
+    
+    text-align: center;
+    color:rgba(17, 17, 17, 0.918);
+    margin-top: 20px;
+}
+
+.Vision, .Mission,.whoWeAre{
+   
+    margin-left: 20%;
+    margin-right:20%;
+    margin-top: 5%;
+    border-radius: 20px;
+    padding:5%;
+    background-color:gray ;
+    color:white;
+}
+.Mission{
+    margin-bottom: 5%;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="signupStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="wrapper">
+    <label  onclick="history.back()" for="" class="close-btn icon fas fa-times">
+    </label>
+    <header>Login Form</header>
+    <form action="/login" method="post">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" name="email"id="email" placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+        </div>
+      <br>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" name="password"id="password" placeholder="Password">
+          <i class="icon fas fa-lock"></i>
+        </div>
+      <br>
+      <div class="pass-txt"><a href="#">Forgot password?</a>
+      </div>
+      <input type="submit" id="submit"value="Login">
+    </form>
+    <div class="sign-txt">Not a member yet? <a href="/register">Signup now</a></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="Feedback.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+</head>
+<body>
+    <%-include('./partials/header.ejs')%>
+    <div class="heading">
+        <h1>Rate Us</h1>
+        <!-- <h2>How was your overall experience with us?</h2> -->
+    </div>
+  
+    <div class="star-rating">
+        <div class="thanks-msg" id="msg">Thanks for your feedback 😊❤️.....</div>
+        
+        <div class="star-input">
+            <input type="radio" name="rating" id="rating-5">
+            <label for="rating-5" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-4">
+            <label for="rating-4" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-3">
+            <label for="rating-3" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-2">
+            <label for="rating-2" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="rating-1">
+            <label for="rating-1" class="fas fa-star"></label> 
+            <form>
+                <span class="rating-reaction"></span>
+                <button  onclick="myFunction()"type="submit" class="submit-rating">Submit</button>
+            </form>   
+        </div>
+    </div>
+    <%-include('./partials/footer.ejs')%>
+    <script src="Feedback.js"></script>
+    
+</body>
+</html>

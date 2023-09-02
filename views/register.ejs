@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="signupStyle.css">
+</head>
+<body>
+  <!-- sign up -->
+  <h1 style="color: rgb(34,3,3);"> <%= title %></h1>
+  <h1 style="color: rgb(34,3,3);"> <%= password %></h1>
+  <h1 style="color: rgb(34,3,3);"> <%= email %></h1>
+  <div class="wrapper">
+    <label  onclick="history.back()" for="" class="close-btn icon fas fa-times">
+    </label>
+    <header>Sign Up Form</header>
+    <form action="/register" method="post">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" name="name"id=userName placeholder="username">
+          <i class="icon fas fa-solid fa-user"></i>
+        </div>
+      </div>
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" name="email" id="email"placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+        </div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" name="password" id="passwordCreate" placeholder="password">
+          <i class="icon fas fa-lock"></i>
+        </div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" name="cpassword" id="passwordConfirm" placeholder="Confirm Password">
+          <i class="icon fas fa-lock"></i>
+        </div>
+        <br>
+        <input type="submit" id="submit"value="Sign in">
+      </div>
+    </form>
+  <div class="sign-txt">Already a member? <a href="/login">Log in</a>
+  </div>
+  </div>
+</body>
+</html>
